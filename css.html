@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Programação para Internet I</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .container{
+        width: 300px; 
+        height: 150px; 
+        border: 3px solid blue;
+      }
+      .container-pequeno{
+        width: 150px; 
+        height: 50px; 
+        border: 3px solid blue;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Programação para Internet I</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="bootstrap.html">Bootstrap</a></li>
+        <li><a href="git.html">Git e GitHub</a></li>
+      </ul>
+    </nav>
+
+      <article>
+        <h2>CSS</h2>
+
+        <h3>Propriedade <code>display</code></h3>
+        <p> A propriedade <code>display</code> especifica como um elemento deve ser mostrado.
+            Todo elemento tem um valor para display, normalmente <code>block</code>, <code>inline</code>
+            ou <code>inline-block</code>. 
+        </p>
+        <p> Elementos <code>block</code> forçam uma quebra de linha após sua exibição e permitem a 
+            definição das propriedades <code>width</code> e <code>height</code>. Se a largura não for definida,
+            o elemento se estende até o final do container. Se a altura não for definida, ela se ajusta
+            automaticamente ao conteúdo.
+        </p> 
+        <div style="border: 3px solid blue;">
+          <p>Esta <code>div</code> com borda azul é um elemento de bloco sem as dimensões definidas.</p>
+          <img src="images/dinosaur.jpg">
+        </div>
+
+        <p>Centralizando elementos de bloco:</p>
+        <div style="width: 500px; margin: auto; border: 3px solid blue;">
+            Uma <code>div</code> centralizada.
+        </div>
+
+        <p>Propriedade <code>max-width</code> em elementos de bloco. Altere o tamanho do viewport para verificar a diferença:</p>
+        <div style="width: 500px; margin: auto; border: 3px solid blue;">
+            Uma <code>div</code> com 500 pixels de largura.
+        </div>
+
+        <div style="max-width: 500px; margin: auto; border: 3px solid blue;">
+            Uma <code>div</code> com no máximo 500 pixels de largura.
+        </div>
+
+        <p> Elementos <code>inline</code> não realizam a quebra de linha e se estendem o necessário para
+            acomodar o conteúdo. Elementos <code>span</code> são elementos <code>inline</code>:
+        </p>
+          <span style="border: 3px solid green;">Redimensione o viewport para verificar o efeito.</span>
+          <span style="border: 3px solid green;">Redimensione o viewport para verificar o efeito.</span>
+
+        <p> Elementos <code>inline-block</code> permitem a definição das propriedades <code>width</code> e <code>height</code>,
+            mas não realizam a quebra de linha. Os elementos <code>span</code> a seguir estão
+            setados como <code>inline-block</code>:
+        </p>
+        <span style="display:inline-block; width:200px; height:50px; border: 3px solid red;">
+          Redimensione o viewport para verificar o efeito.
+        </span>
+        <span style="display:inline-block; width:200px; height:50px; border: 3px solid red;">
+          Redimensione o viewport para verificar o efeito.
+        </span>
+    
+        <p>A propriedade <code>display</code> pode ser alterada. Usando <code>display:inline</code>, por exemplo
+            os elementos de uma lista são organizados horizontalmente:
+        </p>
+        <ul>
+          <li style="display: inline; border: 3px solid green;">Item 1</li>
+          <li style="display: inline; border: 3px solid green;">Item 2</li>
+          <li style="display: inline; border: 3px solid green;">Item 3</li>
+        </ul>
+
+        <h4>Ocultando elementos</h4>
+
+        <p> <code>display:none</code> oculta o elemento e remove da página o espaço ocupado por ele.</p>
+        <p> <code>visibility:hidden</code> também oculta um elemento, mas mantém o espaço ocupado por ele na página:</p>
+        
+        <img src='images/dinosaur.jpg' style="display: block; visibility:visible;">
+        
+
+        <h3>Propriedade <code>overflow</code></h3>
+        <p>Controla o que acontece quando o conteúdo é maior que as dimensões definidas para o elemento.</p>
+        <p><code>overflow:visible</code> permite que o conteúdo ultrapasse as dimensões. Valor default. </p>
+        <p><code>overflow:hidden</code> oculta o overflow. </p>
+        <p><code>overflow:scroll</code> oculta o overflow e exibe uma barra de rolagem. </p>
+        <p><code>overflow:auto</code> adiciona barras de rolagem somente quando necessário.</p>
+
+        <div class="container" style="overflow: auto;">
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+
+        <p>É possível definir o comportamento para cada um dos eixos com as propriedades
+            <code>overflow-x</code> e <code>overflow-y</code>
+        </p>
+
+        <div class="container" style="overflow-x: hidden; overflow-y: hidden;">
+          <img src='images/ifsc.jpg' alt='Edifício do IFSC Canoinhas'>
+        </div>    
+
+
+        <h3>Propriedade <code>position</code></h3>
+
+        <p>Um elemento com <code>position:static</code> é posicionado de acordo com o fluxo normal da página:</p>
+        <div class="container-pequeno" style="position: static;">
+            <code>position:static</code>
+        </div>
+
+        <p>Um elemento com <code>position:relative</code> é posicionado em relação à sua posição normal, alterando-se
+           as propriedades <code>top, right, bottom, left</code>:
+        </p>
+        <div class="container-pequeno" style="position: relative; left:50px;">
+            <code>position:relative</code>
+        </div>
+
+        <p>Um elemento com <code>position:fixed</code> é posicionado em relação ao <em>viewport</em>, definindo-se
+            as propriedades <code>top, right, bottom, left</code>.
+        </p>
+        <div class="container-pequeno" style="position: fixed; bottom: 0; right: 0;">
+            <code>position:fixed</code>
+        </div>
+
+        <p>Um elemento com <code>position:absolute</code> é semelhante à <code>position:fixed</code>,
+           mas o elemento é fixado em relação ao elemento ancestral mais próximo com posição definida.
+        </p>
+
+        <div class="container" style="position:relative;">
+            <code>position:relative</code>
+            <div class="container-pequeno" style="position: absolute; bottom: 0; right: 0;">
+                <code>position:fixed</code>
+            </div>
+        </div>
+
+        <p>Um elemento com <code>position:sticky</code> alterna entre <code>relative</code> e <code>fixed</code> 
+           dependendo da posição da barra de rolagem. </p>
+                
+        <div class="container" style="overflow: auto;">
+          <p>A div abaixo está configurada com <code>position:sticky</code></p>          
+          <div class="container-pequeno" style="position:sticky; top: 0;">
+            <code>position:sticky</code>
+          </div>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+
+
+        <h3>Sobreposição de elementos</h3>
+
+        <p>A propriedade <code>z-index</code> define a ordem de sobreposição dos elementos. Pode assumir valores negativos.</p>
+
+        <div class="container" style="position:relative; overflow: hidden;">
+          <p style="color: blue;"><b>A imagem está posicionada atrás desse texto.</b></p>
+          <img src="images/dinosaur.jpg", style="position: absolute;left: 0px;top: 0px;z-index: -1;">
+        </div>
+        
+
+        <h3>Propriedade <code>float</code></h3>
+
+        <p>Normalmente utilizada para posicionar uma imagem em relação ao texto em um container.</p>
+        <p>Os valores possíveis são <code>left, right, none e inherit.</code></p>
+
+        <div style="width: 500px; height: 350px; border: 3px solid blue;">
+          <p>Altere o valor da propriedade <code>float</code> da imagem neste container para verificar o resultado.</p>
+          <p><img src="images/dinosaur.jpg", style="float:right;">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+          </p>
+        </div>
+
+        <p>A propriedade <code>float</code> também pode ser utilizada para organizar elementos em bloco:</p>
+
+        <div class="container">
+          <div style="float: left; background: red; ">Div 1</div>
+          <div style="float: left; background: blue;">Div 2</div>
+          <div style="float: left; background: green;">Div 3</div>
+        </div>
+
+        <p>A propriedade <code>clear</code> controla em que condições outros elementos podem flutuar ao redor dele. Só funciona
+           em relação a elementos que aparecem antes no documento HTML.
+        </p>
+        <div class="container">
+          <div style="float: left; background: red;">Div 1</div>
+          <div style="float: left; clear: none; background: green;">
+            Div 2
+          </div>
+        </div>
+
+      </article>
+
+    <footer>
+      <p> Referências: 
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" 
+           target="_blank">Mozilla MDN Web Docs</a>
+        <a href="https://www.w3schools.com/" 
+           target="_blank">W3 Schools</a>
+    </footer>
+
+  </body>
+</html>
