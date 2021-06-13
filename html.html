@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Programação para Internet I</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Programação para Internet I</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="bootstrap.html">Bootstrap</a></li>
+        <li><a href="git.html">Git e GitHub</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <article>
+
+        <h2>Elementos básicos de HTML</h2>
+
+        <p>Isto é um parágrafo.</p>
+        
+        <h3>Elementos aninhados:</h3>
+        <p><em>Hello <strong>world!</strong></em></p>
+      
+        <h3>Tipos de disposição dos elementos:</h3>
+        <p>Inline: <em>palavra1</em><em> palavra2</em></p>
+        <p>Block: </p>
+        <p>parágrafo1</p>
+        <p>paragrafo2</p> 
+      
+        <h3>Elementos vazios (apenas tag de abertura):</h3>
+        <img src='images/firefox-icon.png' alt='Ícone do Firefox'>
+      
+        <h3>Links:</h3>
+        <a href='http://www.google.com'>Google</a>
+      
+        <h3>Caracteres especiais:</h3>
+        <p> Menor: &lt; </p>
+        <p> Maior: &gt; </p>
+        <p> Aspas duplas: &quot; </p>
+        <p> Apóstrofo: &apos; </p>
+        <p> E comercial: &amp; </p>
+      
+        <h3>Comentários:</h3>
+        <!-- Isto é um 
+          comentário -->
+          
+        <h3>Níveis estruturais:</h3>
+        <h1>Nível 1 </h1>
+        <h2>Nível 2</h2>
+        <h3>Nível 3</h3>
+        <h4>Nível 4</h4>
+        <h5>Nível 5</h5>
+        <h6>Nível 6</h6>
+      
+        <h3>Elementos sem função semântica:</h3>
+        <p>Inline: <span>span1</span><span> span2</span>
+        <p>Block: <div>div1</div><div>div2</div>
+      
+        <h3 id="listas">Listas</h3>
+      
+        <h4>Lista não ordenada:</h4>
+        
+        <ul>
+          <li>leite</li>
+          <li>ovos</li>
+          <li>pão</li>
+          <li>bolo</li>
+        </ul>
+      
+        <h4>Lista ordenada:</h4>
+        
+        <ol>
+          <li>leite</li>
+          <li>ovos</li>
+          <li>pão</li>
+          <li>bolo</li>
+        </ol>
+      
+        <h4>Listas aninhadas:</h4>
+      
+        <ul>
+          <li>leite</li>
+          <li>ovos</li>
+          <li>
+            <ol>
+              <li>caipira</li>
+              <li>granja</li>
+            </ol>
+          </li>
+          <li>pão</li>
+          <li>bolo</li>
+        </ul>
+      
+        <ol>
+          <li>Fazer as tarefas domésticas;</li>
+          <li>
+            <ul>
+              <li>Lavar e secar a louça;</li>
+              <li>Arrumar o quarto;</li>
+              <li>Varrer a casa;</li>
+            </ul>
+          </li>
+          <li>Fazer os deveres da faculdade;</li>
+          <li>
+            <ul>
+              <li>Programação para Internet I;</li>
+              <li>Banco de Dados II;</li>
+            </ul>
+          </li>
+        </ol>
+      
+        <h3>Formatação direta no texto e quebra de linha:</h3>
+        <p>
+          <b>Negrito</b><br/> 
+          <i>Itálico</i><br/>
+          <u>Sublinhado</u>
+        </p>
+
+
+        <h2>Hiperlinks</h2>
+
+        <p>Estou criando um link para <a href="https://www.mozilla.org/pt-BR/">
+           A página inicial da Mozilla</a>
+        </p>
+    
+        <p>Estou criando um link com o atributo <em>title</em> para 
+          <a href="https://www.mozilla.org/pt-BR/" 
+             title="O melhor lugar para encontrar mais informações a Mozilla">
+             A página inicial da Mozilla</a>
+        </p>
+    
+        <p>Link em uma imagem: </p>
+          <a href="https://www.mozilla.org/pt-BR/" 
+             title="O melhor lugar para encontrar mais informações a Mozilla">
+             <img src="images/firefox-icon.png" 
+             alt="Logotipo mozilla que liga a página inicial do mozilla">
+          </a>
+    
+        <h3>Link para uma parte específica de um documento:</h3>
+        <p><a href="#listas">Exemplos de listas em HTML</a></p>
+    
+        <h3>Link para download:</h3>
+        <p><a href="pdfs/aula-4.pdf">Arquivo PDF</a></p>
+    
+        <h3>Link para e-mail:</h3>
+        <a href="mailto:alguem@algumlugar.com.br">Enviar email para alguém</a>
+    
+        <h3>Link que abre em outra aba do navegador:</h3>
+        <p><a href="http://ifsc.edu.br" target="_blank">IFSC</a></p>
+    
+
+        <h2>Tabelas</h2>
+
+        <h3>Criando uma tabela:</h3>
+
+        <table>
+          <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+            <th>Título 4</th>
+          </tr>
+          <tr>
+            <td>Linha 1, célula 1</td>
+            <td>Linha 1, célula 2</td>
+            <td>Linha 1, célula 3</td>
+            <td>Linha 1, célula 4</td>
+          </tr>
+          <tr>
+            <td>Linha 2, célula 1</td>
+            <td>Linha 2, célula 2</td>
+            <td>Linha 2, célula 3</td>
+            <td>Linha 2, célula 4</td>
+          </tr>
+        </table>
+
+        <h3>Mesclando células:</h3>
+
+        <table>
+          <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+            <th>Título 4</th>
+          </tr>
+          <tr>
+            <td colspan = "2">Linha 1, célula 1</td>
+            <td>Linha 1, célula 3</td>
+            <td>Linha 1, célula 4</td>
+          </tr>
+          <tr>
+            <td rowspan = "2">Linha 2, célula 1</td>
+            <td>Linha 2, célula 2</td>
+            <td>Linha 2, célula 3</td>
+            <td>Linha 2, célula 4</td>
+          </tr>
+          <tr>
+            <td>Linha 3, célula 2</td>
+            <td>Linha 3, célula 3</td>
+            <td>Linha 3, célula 4</td>
+          </tr>
+        </table>
+
+
+        <h2>Multimídia e incorporação</h2>
+
+        <h3>Incorporando uma imagem:</h3>
+        
+        <figure>
+          <img src="images/dinosaur.jpg"
+          alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+          width="200"
+          height="171"
+          title="A T-Rex on display in the Manchester University Museum">
+          <figcaption>Título da figura</figcaption>
+        </figure>
+
+        <h3>Imagem como fundo de um elemento:</h3>
+        
+        <p style = "
+          width: 300px;
+          height: 400px;
+          border: 1px solid black;
+          background-image: url('images/dinosaur.jpg');">
+          Este elemento é um parágrafo. 
+        </p>
+
+        <h2>Videos</h2>
+
+        <h3>Incorporando um video:</h3>
+
+        <video src="videos/rabbit320.webm" controls>
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+        </video>
+
+        <h3>Com os atributos autoplay e muted:</h3>
+
+        <video src="videos/rabbit320.webm" autoplay muted>
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+        </video>
+
+        <h3>Incorporando um video do Youtube:</h3>
+
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/4ActsyvnxfA" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+
+        <h3>Incorporando um mapa do Google Maps:</h3>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.4102656472473!2d-50.36920528566716!3d-26.183329169482388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e712bd8cf83b25%3A0xcbfe52ab491b27e7!2sIFSC%20C%C3%A2mpus%20Canoinhas!5e0!3m2!1spt-BR!2sbr!4v1623278978498!5m2!1spt-BR!2sbr"
+         width="600" height="450" style="border:0;" 
+         allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <h3>Incorporando um documento PDF:</h3>
+
+        <object data="pdfs/aula-4.pdf" type="application/pdf"
+          width="600" height="800">
+          <p>You don't have a PDF plugin, but you can
+            <a href="pdfs/aula-4.pdf">download the PDF file.</a>
+          </p>
+        </object>
+
+        <h3>Incorporando vetores gráficos SVG:</h3>
+        
+        <svg width="300" height="200">
+          <rect width="100%" height="100%" fill="black" />
+          <circle cx="150" cy="100" r="90" fill="blue" />
+        </svg>
+
+        <svg width="100%">
+          <rect width="100%" height="100%" fill="red" />
+          <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+          <polygon points="120,0 240,225 0,225" fill="green"/>
+          <text x="50" y="100" font-family="Verdana" font-size="55"
+                fill="white" stroke="black" stroke-width="2">
+                  Hello!
+          </text>
+        </svg>
+
+      </article>
+
+      <aside>
+        <h3>Informações adicionais</h3>
+        <p>Esta página está utilizando os elementos semânticos do padrão HTML 5,
+          para atribuir significado às seções da página.
+        </p>
+      </aside>
+
+    </main>
+
+    <footer>
+      <p> Referências: 
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" 
+           target="_blank">Mozilla MDN Web Docs</a>
+        <a href="https://www.w3schools.com/" 
+           target="_blank">W3 Schools</a>
+    </footer>
+
+  </body>
+</html>

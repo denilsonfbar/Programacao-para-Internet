@@ -1,68 +1,40 @@
 /* Regras gerais */
 
+* {
+  font-family: Arial, sans-serif;;
+}
+
 html {
-  font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: gray;
 }
 
 body {
-  width: 70%;
+  width: 80%;
   min-width: 800px;
   margin: 0 auto;
 }
 
-header, nav, main, article, aside, footer {
-  background-color: rgba(86, 138, 146, 0.5);
+header, nav, main, footer {
+  background-color: rgba(122, 202, 214, 0.5);
   padding: 1%;
-}
-
-/* Tipografia */
-
-h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
-  color: #2a2a2a;
-  text-align: center;
-}
-
-p, li {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #2a2a2a;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 10px black;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2.2rem;
+  margin-bottom: 10px
 }
 
 td {
-  font-size: 1.5rem;
+  border: 1px solid black;
 }
 
-/* Cabeçalho (header) e menu principal (nav) */
-
-header {
-  margin-bottom: 10px;
+/* Cabeçalho */
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
-nav {
-  height: 70px;
-}
-
+/* Menu */
 nav ul {
   display: flex;
-  padding: 0;
   list-style-type: none;
+  padding: 0;
 }
 
 nav li {
@@ -71,47 +43,25 @@ nav li {
   text-align: center;
 }
 
-nav a, nav span {
-  display: inline-block;
-  font-size: 2rem;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
+nav a {
+  font-size: 1.5rem;
+  height: 2rem;
 }
 
 /* Seção principal (main) */
-
 main {
   display: flex;
 }
 
 article {
-  flex: 4;
+  flex: 3;
 }
 
 aside {
-  
   flex: 1;
-  margin-left: 10px;
-  padding: 1%;
 }
 
+/* Rodapé */
 footer {
-  margin-top: 10px;
   text-align: center;
-}
-
-#img-fundo{
-  width: 500px;
-  height: 600px;
-  border: 1px solid black;
-  background-image: url("images/dinosaur.jpg");
-}
-
-/* Tabelas */
-
-td {
-  border: 1px solid black;
 }
